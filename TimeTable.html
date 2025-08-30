@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      .day,
+      .heading {
+        font-weight: bold;
+      }
+      #break {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- first heading -->
+      <tr class="heading">
+        <td colspan="8" class="heading">
+          LYALLPUR KHALSA COLLEGE TECHNICAL CAMPUS
+        </td>
+
+        <td colspan="2" rowspan="2">W.E.F 26Aug 2025</td>
+      </tr>
+      <!-- second heading -->
+      <tr class="heading">
+        <td colspan="8" style="text-transform: capitalize; font-size: large">
+          Time Table of Department of Information Technology
+        </td>
+      </tr>
+
+      <!-- class name -->
+      <tr class="heading">
+        <td colspan="2">BCA-V</td>
+        <!-- mode -->
+        <td colspan="3">OFFLINE MODE</td>
+        <!-- Room  -->
+        <td colspan="4">ROOM NO:-206</td>
+      </tr>
+      <!-- Columns -->
+      <tr>
+        <th>TIME</th>
+        <th>(09:05-10:00)</th>
+        <th>(10:00-10:55)</th>
+        <th>(10:55-11:50)</th>
+        <th>(11:50-12:45)</th>
+        <th>(12:45-1:30)</th>
+        <th>(1:30-02:20)</th>
+        <th>(02:20-03:10)</th>
+        <th>(03:10-04:00)</th>
+      </tr>
+      <!-- row data -->
+      <tr class="day">
+        <td>Day</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+      </tr>
+      <!-- classes info -->
+      <tr>
+        <td class="day">Monday</td>
+        <td>UGCA1929 L(SV)</td>
+        <td colspan="2">UGCA1941 P(MD) LAB (300-C)</td>
+        <td>UGCA 1931 L(AV)</td>
+        <td rowspan="5" id="break">BREAK</td>
+        <td>AWS P(AV) LAB (300-D)</td>
+        <td>UGCA1936 L (AS)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="day">Tuesday</td>
+        <td>UGCA1937 P (NN) (LAB 300-C)</td>
+        <td>UGCA1935 L (AP)</td>
+        <td>UGCA 1931 L(AV)</td>
+        <td>UGCA1936 L (AS)</td>
+        <!-- <td>R</td> -->
+        <td colspan="2">AWS P(AV) LAB (300-D)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="day">Wednesday</td>
+        <td>UGCA1937 P (NN) (LAB 300-C)</td>
+        <td colspan="2">UGCA1930 P (PS) LAB-(300-C)</td>
+        <td>UGCA1929 L(SV)</td>
+        <!-- <td>E</td> -->
+        <td>UGCA1936 L (AS)</td>
+        <td>UGCA1935 L (AP)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="day">Thursday</td>
+        <td>UGCA1937 P (NN) (LAB 300-C)</td>
+        <td>UGCA1936 L (AS)</td>
+        <td>UGCA 1931 L(AV)</td>
+        <td>UGCA1929 L(SV)</td>
+        <!-- <td>A</td> -->
+        <td>UGCA1935 L (AP)</td>
+        <td>UGCA1941 P(MD) LAB (300-C)</td>
+        <td>Summer Training LAB (300-D)</td>
+      </tr>
+      <tr>
+        <td class="day">Friday</td>
+        <td>Minor Project (SV) LAB(300-B)</td>
+        <td>UGCA 1931 L(AV)</td>
+        <td>UGCA1935 L (AP)</td>
+        <td>Minor Project (SV) LAB(300-B)</td>
+        <!-- <td>K</td> -->
+        <td>Library</td>
+        <td>BMPD 502-18 L(AS)</td>
+        <td>Summer Training LAB (300-D)</td>
+      </tr>
+    </table>
+  </body>
+</html>
